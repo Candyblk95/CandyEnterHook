@@ -1,6 +1,6 @@
 # CandyEnterHook
-What it Says - PiggyBacks off the Chat keybinds (Chatbox Texture Aura) 
-`This is a small addon to get a texture to load when opening and closing your chatbox, if you know code you can recode it to other functions that are keybound by "hardlocked" keybind keys `
+`What it Says - PiggyBacks off the Chat keybinds (Chatbox Texture Aura) 
+This is a small addon to get a texture to load when opening and closing your chatbox, if you know code you can recode it to other functions that are keybound by "hardlocked" keybind keys `
 ## **Trigger → Custom → Event**
 ## **Event(s):**
 
