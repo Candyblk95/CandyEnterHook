@@ -1,0 +1,8 @@
+## Interface: 100207
+## Title: Candy Enter Hook
+## Notes: Fires a WeakAura event whenever Enter (chat open) is pressed
+## Author: Candy
+## Version: 1.0
+
+CandyEnterHook.lua
+
