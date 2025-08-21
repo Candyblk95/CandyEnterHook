@@ -1,10 +1,16 @@
--- Create a frame to listen for chat activation
+-- Fire WA events when chat opens/closes
 local f = CreateFrame("Frame")
 
--- Hook into the function Blizzard calls when you hit Enter
+-- Chat opened (Enter pressed)
 hooksecurefunc("ChatFrame_OpenChat", function()
-    -- Fire a WeakAura custom event
     if WeakAuras then
-        WeakAuras.ScanEvents("CANDY_UI_TOGGLE")
+        WeakAuras.ScanEvents("CANDY_UI_SHOW")
+    end
+end)
+
+-- Chat closed (Enter again, Esc, clicking away, etc.)
+hooksecurefunc("ChatEdit_DeactivateChat", function()
+    if WeakAuras then
+        WeakAuras.ScanEvents("CANDY_UI_HIDE")
     end
 end)
